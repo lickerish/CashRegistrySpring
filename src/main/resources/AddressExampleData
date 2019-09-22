@@ -1,0 +1,25 @@
+1. Create using JSON in request body
+http://localhost:8080/address/createWithJSON
+{
+    "street": "Rockefeler",
+    "city": "New York",
+    "zipCode": "62-753"
+}
+----------------------------------------------------
+2. Create using URI parameters
+http://localhost:8080/address/create?street=Madison&city=New York&zipCode=60-456
+----------------------------------------------------
+3. Mass create
+http://localhost:8080/address/massCreate
+[
+    {
+        "street": "Rigatti Avenue",
+        "city": "Miami",
+        "zipCode": "09-273"
+    },
+    {
+        "street": "Json avenue",
+        "city": "Miami",
+        "zipCode": "73-282"
+    }
+]ó
